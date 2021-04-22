@@ -77,11 +77,11 @@ class App{
                 gltf.scene.traverse( ( child ) => {
                     if (child.isMesh){
                         child.material.metalness = 0.2;
+                        console.log("SUUU");
+                        child.position.y = -80;
                     }
                 })
                 self.chair = gltf.scene;
-                
-                gltf.scene.position.y = -80;
 
 				self.scene.add( gltf.scene );
                 
