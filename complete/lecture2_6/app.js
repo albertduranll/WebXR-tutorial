@@ -80,6 +80,8 @@ class App{
                     }
                 })
                 self.chair = gltf.scene;
+
+                self.chair.position.y = -10;
                 
 				self.scene.add( gltf.scene );
                 
