@@ -84,12 +84,9 @@ class App{
                 //self.chair.position.set(0, -10, 0);
 
                 gltf.scene.position.set(0, -5, 0);
-                gltf.scene.rotation.set(new THREE.Vector3( 0, 0, Math.PI / 2));
+                gltf.scene.rotation.set(new THREE.Vector3( Math.PI / 2, 0, 0));
                 //gltf.scene.rotation.set(new THREE.Vector3( Math.PI / 2, 0, 0));
                 console.log("Posició capturada:");
-                console.log(gltf.scene.rotation.x);
-                console.log(gltf.scene.rotation.y);
-                console.log(gltf.scene.rotation.z); 
 
 				self.scene.add( gltf.scene );
                 
